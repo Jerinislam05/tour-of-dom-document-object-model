@@ -1,3 +1,12 @@
 h1{
     color: brown;
 }
+li{
+    color: darkgreen;
+}
+#fruits-title{
+    color: black;
+}
+.important-places{
+    color: blueviolet;
+}
