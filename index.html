@@ -26,7 +26,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="fruits-container">
         <h1 id="fruits-title">Fruits I like</h1>
         <ul>
           <li>apple</li>
@@ -35,30 +35,44 @@
         </ul>
       </section>
 
-      <section>
+      <section id="places-container" class="large-text">
         <h1>Places I like to visit</h1>
         <ul>
-            <li class="important-places">sundarban</li>
-            <li class="important-places">bandorban</li>
-            <li class="important-places">cox's bazar</li>
-            <li class="important-places">shalbon</li>
+          <li class="important-places">sundarban</li>
+          <li class="important-places">bandorban</li>
+          <li class="important-places">cox's bazar</li>
+          <li class="important-places">shalbon</li>
         </ul>
       </section>
     </main>
     <script src="dom.js"></script>
     <script>
-      const liCollection = document.getElementsByTagName("li");
-      for (const li of liCollection) {
-        // console.log(li.innerText);
+        //   option-1: getElementById
+      const allHeadings = document.getElementsById("h1");
+      for (const heading of allHeadings) {
+        // console.log(heading.allHeadings);
       }
-
+      //   option-2: getElementsByTagName
       const allHeaders = document.getElementsByTagName("h1");
       for (const h1 of allHeaders) {
         // console.log(h1.innerText);
       }
-      const Places = document.getElementsByClassName('important-places');
+      //   option-3: getElementsByClassName
+      const Places = document.getElementsByClassName("important-places");
       for (const place of Places) {
-        console.log(place.innerText);
+        // console.log(place.innerText);
+      }
+
+      // option-4: querySelectorAll
+      const someLi = document.querySelectorAll(".fruits-container li");
+      // console.log(someLi);
+      for (const li of someLi) {
+        // console.log(li.innerText);
+      }
+      // option-5: querySelector
+      const firstLi = document.querySelector('.place-container li');
+      for (const li of firstLi) {
+        // console.log(li.innerText);
       }
     </script>
   </body>

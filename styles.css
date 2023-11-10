@@ -1,7 +1,7 @@
 h1{
     color: brown;
 }
-li{
+.fruits-container li{
     color: darkgreen;
 }
 #fruits-title{
@@ -9,4 +9,10 @@ li{
 }
 .important-places{
     color: blueviolet;
+}
+.text-center {
+    text-align: center;
+}
+.large-text {
+    font-size: 2em;
 }
